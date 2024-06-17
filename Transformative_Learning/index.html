@@ -36,13 +36,13 @@
       </div>
       <div class="navbar-menu">
          <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-            <a class="navbar-item" href="https://keunhong.com">
+            <a class="navbar-item" href="https://tramvet.github.io">
                <span class="icon">
                   <i class="fas fa-home"></i>
                </span>
             </a>
 
-            <div class="navbar-item has-dropdown is-hoverable">
+            <!-- <div class="navbar-item has-dropdown is-hoverable">
                <a class="navbar-link">
                   More Research
                </a>
@@ -60,7 +60,7 @@
                      PhotoShape
                   </a>
                </div>
-            </div>
+            </div> -->
          </div>
 
       </div>
@@ -219,34 +219,10 @@
          <!-- Abstract. -->
          <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-               <h2 class="title is-3">Abstract</h2>
+               <h2 class="title is-3">About</h2>
                <div class="content has-text-justified">
                   <p>
-                     We present the first method capable of photorealistically reconstructing a non-rigidly
-                     deforming scene using photos/videos captured casually from mobile phones.
-                  </p>
-                  <p>
-                     Our approach augments neural radiance fields
-                     (NeRF) by optimizing an
-                     additional continuous volumetric deformation field that warps each observed point into a
-                     canonical 5D NeRF.
-                     We observe that these NeRF-like deformation fields are prone to local minima, and
-                     propose a coarse-to-fine optimization method for coordinate-based models that allows for
-                     more robust optimization.
-                     By adapting principles from geometry processing and physical simulation to NeRF-like
-                     models, we propose an elastic regularization of the deformation field that further
-                     improves robustness.
-                  </p>
-                  <p>
-                     We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-                     photos/videos into deformable NeRF
-                     models that allow for photorealistic renderings of the subject from arbitrary
-                     viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-                     using a
-                     rig with two mobile phones that take time-synchronized photos, yielding train/validation
-                     images of the same pose at different viewpoints. We show that our method faithfully
-                     reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-                     fidelity.
+                     Este trabajo explora la integración de la realidad aumentada (AR) en la educación, destacando la colaboración entre maestros y inteligencia artificial (IA) para mejorar la calidad y la personalización del aprendizaje. La aplicación AR.JS se presenta como una herramienta valiosa para crear experiencias de aprendizaje interactivas, atractivas y personalizadas. Se analiza cómo diferentes tipos de maestros pueden utilizar esta aplicación para diseñar lecciones y actividades didácticas, destacando los beneficios de la colaboración entre maestros y IA.
                   </p>
                </div>
             </div>
@@ -276,30 +252,23 @@
             <!-- Visual Effects. -->
             <div class="column">
                <div class="content">
-                  <h2 class="title is-3">Visual Effects</h2>
+                  <h2 class="title is-3">Colaboración entre Maestros y IA:</h2>
                   <p>
-                     Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-                     would be impossible without nerfies since it would require going through a wall.
+                     La colaboración entre maestros y IA es clave para el éxito de la integración de la AR en la educación. Se presentan diferentes modelos de colaboración, incluyendo One Teach-One Observe, One Teach-One Assist, Station Teaching, Parallel Teaching, Alternative Teaching y Team Teaching. Cada modelo destaca la forma en que el maestro y la IA trabajan juntos para crear experiencias de aprendizaje interactivas y atractivas.
                   </p>
-                  <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-                     <source src="./static/videos/dollyzoom-stacked.mp4" type="video/mp4">
-                  </video>
                </div>
             </div>
             <!--/ Visual Effects. -->
 
             <!-- Matting. -->
             <div class="column">
-               <h2 class="title is-3">Matting</h2>
+               <h2 class="title is-3">Ejemplos de Uso:</h2>
                <div class="columns is-centered">
                   <div class="column content">
                      <p>
-                        As a byproduct of our method, we can also solve the matting problem by ignoring
-                        samples that fall outside of a bounding box during rendering.
+                        Se proporcionan ejemplos concretos de cómo cada tipo de maestro puede utilizar la aplicación AR.JS para crear actividades didácticas. Por ejemplo, un maestro puede utilizar AR.JS para mostrar un modelo 3D del corazón humano mientras explica su funcionamiento, mientras que la IA registra qué partes del modelo llaman más la atención de los estudiantes y si tienen dificultades para comprender algún concepto.
                      </p>
-                     <video id="matting-video" controls playsinline height="100%">
-                        <source src="./static/videos/matting.mp4" type="video/mp4">
-                     </video>
+                   
                   </div>
 
                </div>
@@ -310,7 +279,17 @@
          <!-- Animation. -->
          <div class="columns is-centered">
             <div class="column is-full-width">
-               <h2 class="title is-3">Animation</h2>
+               <h2 class="title is-3">Beneficios:</h2>
+               
+               <div class="content">
+                  <p>La integración de la AR en la educación ofrece varios beneficios, incluyendo:</p>
+                  <ol type="1">
+                    <li>Personalización del Aprendizaje: La AR permite crear experiencias de aprendizaje personalizadas para cada estudiante, adaptándose a sus necesidades individuales.</li>
+                    <li>Interactividad y Atractividad: La AR hace que el aprendizaje sea más interactivo y atractivo, aumentando la motivación y la participación de los estudiantes.</li>
+                    <li>Mejora de la Retención: La AR ayuda a los estudiantes a retener mejor el contenido, ya que la interacción y la exploración activan la memoria y el aprendizaje.</li>
+                  </ol>
+                 
+                </div>
 
                <!-- Interpolating. -->
                <h3 class="title is-4">Interpolating states</h3>
@@ -321,26 +300,6 @@
                      frame.
                   </p>
                </div>
-               <div class="columns is-vcentered interpolation-panel">
-                  <div class="column is-3 has-text-centered">
-                     <img src="./static/images/interpolate_start.jpg" class="interpolation-image"
-                        alt="Interpolate start reference image." />
-                     <p>Start Frame</p>
-                  </div>
-                  <div class="column interpolation-video-column">
-                     <div id="interpolation-image-wrapper">
-                        Loading...
-                     </div>
-                     <input class="slider is-fullwidth is-large is-info" id="interpolation-slider" step="1" min="0"
-                        max="100" value="0" type="range">
-                  </div>
-                  <div class="column is-3 has-text-centered">
-                     <img src="./static/images/interpolate_end.jpg" class="interpolation-image"
-                        alt="Interpolation end reference image." />
-                     <p class="is-bold">End Frame</p>
-                  </div>
-               </div>
-               <br />
                <!--/ Interpolating. -->
 
                <!-- Re-rendering. -->
@@ -417,17 +376,27 @@
 
    <footer class="footer">
       <div class="container">
-         <div class="content has-text-centered">
+         <!-- <div class="content has-text-centered">
             <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
                <i class="fas fa-file-pdf"></i>
             </a>
             <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
                <i class="fab fa-github"></i>
             </a>
-         </div>
+         </div> -->
+        
+         <!-- <ul class="icons"><li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul></div> -->
+     
          <div class="columns is-centered">
             <div class="column is-8">
                <div class="content" style="text-align: center;">
+                  <h5>© TRAMVET</h5>
+        
+                  <h6>Universidad Politecnica de Santa Rosa Jauregui (UPSRJ)</h6>
                   <p>
                      This website is licensed under a <a rel="license"
                         href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
