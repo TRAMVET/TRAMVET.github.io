@@ -179,7 +179,7 @@ body {
 }
 
 body {
-   background: #202024;
+   background: #f5f5f5;
 }
 
 body.is-loading *,
@@ -455,7 +455,15 @@ header h6+p {
 .thumbnails .box {
    margin: 0 1em 2em 1em;
    width: 30%;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
 }
+
+.thumbnails .box:hover {
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+   transition: box-shadow 0.2s ease-in-out;
+}
+
 
 @media screen and (max-width: 1280px) {
 
@@ -469,6 +477,7 @@ header h6+p {
 
    .thumbnails .box {
       width: 100%;
+      
    }
 
 }
@@ -679,12 +688,16 @@ input[type="radio"]+label:before {
    margin-bottom: 2em;
    background: #2c2c32;
    text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
 }
 
 .box> :last-child,
 .box> :last-child> :last-child,
 .box> :last-child> :last-child> :last-child {
    margin-bottom: 0;
+
 }
 
 .box .image.fit {
@@ -698,6 +711,9 @@ input[type="radio"]+label:before {
 .box .inner {
    padding: 1.5em;
    width: 100% !important;
+   display: flex;
+   flex-direction: column;
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1067,7 +1083,7 @@ button,
    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-   background-color: #125e75;
+   background-color: #1B4159;
    border-radius: 4px;
    border: 0;
    color: #ffffff !important;
@@ -1087,7 +1103,7 @@ input[type="reset"]:hover,
 input[type="button"]:hover,
 button:hover,
 .button:hover {
-   background-color: #82cec6;
+   background-color: #0f3447;
 }
 
 input[type="submit"]:active,
