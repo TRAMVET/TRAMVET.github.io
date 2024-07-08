@@ -462,6 +462,7 @@ header h6+p {
 .thumbnails .box:hover {
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
    transition: box-shadow 0.2s ease-in-out;
+   transform: scale(1.05);
 }
 
 
@@ -1148,17 +1149,34 @@ button.small,
    font-size: 0.8em;
 }
 
-input[type="submit"].big,
-input[type="reset"].big,
-input[type="button"].big,
-button.big,
-.button.big {
-   font-size: 1.35em;
+input[type="submit"].big,.navbar {
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: black;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1em;
 }
 
-input[type="submit"].disabled,
-input[type="submit"]:disabled,
-input[type="reset"].disabled,
+.navbar ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.navbar li {
+   margin-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+   .navbar {
+      position: fixed;
+      width: 100%;
+   }
+}d,
 input[type="reset"]:disabled,
 input[type="button"].disabled,
 input[type="button"]:disabled,
@@ -1574,4 +1592,18 @@ body.is-loading #banner:before {
       padding: 3em 0 1em 0;
    }
 
+}
+
+.navbar {
+   position: sticky;
+   top: 0;
+   z-index: 100;
+   background-color: black;
+}
+
+@media screen and (max-width: 768px) {
+   .navbar {
+      position: fixed;
+      width: 100%;
+   }
 }
