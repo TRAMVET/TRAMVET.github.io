@@ -11,66 +11,57 @@
    <meta charset="utf-8">
    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="/assets/css/contacto-page.css">
 
-   
+   <script>
+      function toggleMenu() {
+          var nav = document.querySelector('.navbar-nav');
+          nav.classList.toggle('show');
+      }
+  </script>
+  
 </head>
 
 <body id="top">
 
-   <!-- Banner -->
-   <!--
-				To use a video as your background, set data-video to the name of your video without
-				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
-				formats to work correctly.
-			-->
+  
 
    <!-- Navigation -->
    <nav class="navbar">
-      <ul class="navbar-nav">
-         <li class="nav-item">
-            <a class="nav-link" href="/index.html">Home</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="/about.html">About</a>
-         </li>
-         <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-         </li>
-      </ul>
-   </nav>
-
-
-
-   <section id="banner" data-video="images/banner">
-      <div class="inner">
-
-         <header>
-            <h1>TRAMVET</h1>
-            <h2 style="font-weight: bold;">Taller de Realidad Aumentada, Mundos Virtuales y Elementos Tridimensionales</h2>
-            <p></p>
-        
-         </header>
+      <div class="navbar-left">
+         <a class="nav-link" href="/index.html">TRAMVET</a>
+         <a  class="nav-link-below" href="/index.html">Universidad Politécnica de Santa Rosa Jáuregui</a>
       </div>
-   </section><!-- Main -->
+      <div class="navbar-right">
+          <ul class="nav-links">
+            <li><a href="/index.html">INICIO</a></li>
+            <li><a href="/pages/projects.html">PROYECTOS</a></li>
+            <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            <li><a href="/pages/equipo.html">EQUIPO</a></li>
+            <li><a href="/pages/eventos.html">EVENTOS</a></li>
+         </ul>
+          <div class="hamburger" id="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+      </div>
+  </nav>
+  <script src="/assets/js/scripts.js"></script>
+
+
+<!-- Main -->
    <div id="main">
 
 
 
-
       <div class="inner">
-
-
-          <!-- Project Descriptions -->
- <div class="box">
-   <div class="inner">
-      <h3>Descripción de los Proyectos</h3>
-      <p>Aquí encontrarás una lista de nuestros proyectos e investigaciones en el campo de la realidad aumentada, mundos virtuales y elementos tridimensionales. Cada proyecto tiene como objetivo explorar nuevas formas de interacción digital y crear experiencias inmersivas. Nuestro taller es un espacio dinámico donde la tecnología avanzada y la creatividad se unen para transformar la manera en que interactuamos con el mundo digital.</p>
-   </div>
-</div>
+         
+         <p class="subtitulo">PROYECTOS - Taller de Realidad Aumentada, Mundos Virtuales y Elementos Tridimensionales</p>
+         <!-- PROYECTOS ALINEADO ALA DERECHA -->
+         <div class="titulo">
+         </div>
+   
 
          <!-- Boxes -->
          <div class="thumbnails">
@@ -79,7 +70,7 @@
             <!--IAS-->
             <div class="box">
                <div href="https://tramvet.github.io/pages/Transformative_Learning/" class="image fit"><img
-                     src="images/ia.jpg" alt="" width="600" height="338"></div>
+                     src="/images/ia.jpg" alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Transformative Learning Through: AR SCHOOLING App, A Beta Phase Analysis of Augmented Reality in
                      Education</h3>
@@ -95,7 +86,7 @@
             <!--SANSAR-->
             <div class="box">
                <div href="https://tramvet.github.io/pages/Inmersion_Digital/" class="image fit"><img
-                     src="images/sansar.jpg" alt="" width="600" height="338"></div>
+                     src="/images/sansar.jpg" alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Iniciando la inmersión Digital: Desarrollo de un Entorno de Aprendizaje Inclusivo y Amigable para
                      Estudiantes en un Mundo Virtual</h3>
@@ -110,7 +101,7 @@
 
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Roblox/" class="image fit"><img src="images/roblox.jpg" alt=""
+               <div href="https://tramvet.github.io/pages/Roblox/" class="image fit"><img src="/images/roblox.jpg" alt=""
                      width="600" height="338"></div>
                <div class="inner">
                   <h3>Mundos Virtuales para un Aprendizaje Inmersivo y Lúdico: Potenciando la Enseñanza de Anatomía Ósea
@@ -125,7 +116,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Cluster/" class="image fit"><img src="images/cluster.jpg"
+               <div href="https://tramvet.github.io/pages/Cluster/" class="image fit"><img src="/images/cluster.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Entornos 3D Inclusivos: Puente Cultural</h3>
@@ -139,7 +130,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Spatial/" class="image fit"><img src="images/spatial.jpg"
+               <div href="https://tramvet.github.io/pages/Spatial/" class="image fit"><img src="/images/spatial.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Reimaginando la Experiencia Museística: Estrategias Inclusivas y Ludificación en Entornos
@@ -154,7 +145,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Rec_Room/" class="image fit"><img src="images/recroom.jpg"
+               <div href="https://tramvet.github.io/pages/Rec_Room/" class="image fit"><img src="/images/recroom.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Dimensionando el Futuro: Innovación en Metrología Dimensional a través de Laboratorios Virtuales
@@ -169,7 +160,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Vr_Chat/" class="image fit"><img src="images/vrchat.jpg"
+               <div href="https://tramvet.github.io/pages/Vr_Chat/" class="image fit"><img src="/images/vrchat.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Robótica Inmersiva e Inclusiva con IA en Mundos Virtuales</h3>
@@ -182,7 +173,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Bezi/" class="image fit"><img src="images/bezi.jpg" alt=""
+               <div href="https://tramvet.github.io/pages/Bezi/" class="image fit"><img src="/images/bezi.jpg" alt=""
                      width="600" height="338"></div>
                <div class="inner">
                   <h3>Revitalización de la Tradición Otomí en la Era Digital: Integración de Actividades Lúdicas y
@@ -196,7 +187,7 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Evaai/" class="image fit"><img src="images/automotriz.jpg"
+               <div href="https://tramvet.github.io/pages/Evaai/" class="image fit"><img src="/images/automotriz.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
                   <h3>Ecosistema Virtual de Aprendizaje Automotriz Interoperable EVAAI</h3>
@@ -209,10 +200,10 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="images/robotica.jpg"
+               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="/images/car1.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
-                  <h3>Robotica</h3>
+                  <h3>Gemelo Digital Seguidor de Linea</h3>
                   <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi
                      accumsan.</p>
                   <button class="fit"
@@ -222,10 +213,10 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="images/sansar.jpg"
+               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="/images/car2.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
-                  <h3>Robotica</h3>
+                  <h3>Mapeo de Zonas mediante Seguidor de Linea</h3>
                   <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi
                      accumsan.</p>
                   <button class="fit"
@@ -235,10 +226,10 @@
             </div>
 
             <div class="box">
-               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="images/robotica.jpg"
+               <div href="https://tramvet.github.io/pages/Robotica_XR/" class="image fit"><img src="/images/roboticarm.jpg"
                      alt="" width="600" height="338"></div>
                <div class="inner">
-                  <h3>Robotica</h3>
+                  <h3>Brazo Robotico mediante IK</h3>
                   <p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi
                      accumsan.</p>
                   <button class="fit"
@@ -246,10 +237,6 @@
                      More</button>
                </div>
             </div>
-
-
-
-
 
 
          </div>
