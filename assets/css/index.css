@@ -182,7 +182,7 @@ body {
 }
 
 body {
-   background: #f5f5f5;
+   background: linear-gradient(to bottom, #f5f5f5, #d4d4d4);
 }
 
 body.is-loading *,
