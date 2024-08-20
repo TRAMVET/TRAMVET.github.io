@@ -11,14 +11,19 @@
    <meta charset="utf-8">
    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="/assets/css/miembros-page.css">
 
-   <script>
-      function toggleMenu() {
-         var nav = document.querySelector('.navbar-nav');
-         nav.classList.toggle('show');
-      }
-   </script>
+   <link rel="icon" href="/images/imagen_20tramvetbn.png">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+   <script src="/assets/js/menu.js"></script>
+
 
 </head>
 
@@ -29,16 +34,99 @@
    <!-- Navigation -->
    <nav class="navbar">
       <div class="navbar-left">
-         <a class="nav-link" href="/index.html">TRAMVET</a>
+         <a class="nav-link" href="/index.html">TRAMVET </a>
          <a class="nav-link-below" href="/index.html">Universidad Politécnica de Santa Rosa Jáuregui</a>
+         
       </div>
       <div class="navbar-right">
          <ul class="nav-links">
-            <li><a href="/index.html">INICIO</a></li>
-            <li><a href="/pages/projects.html">PROYECTOS</a></li>
-            <li><a href="/pages/miembros.html">MIEMBROS</a></li>
-            <li><a href="/pages/eventos.html">EVENTOS</a></li>
-            <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li>
+               <a href="/pages/projects.html">
+                 Proyectos <i class="fas fa-chevron-down"></i>
+               </a>
+               <ul class="dropdown">
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Rec Room <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Dimensionando_el_Futuro/">Laboratorios Virtuales Metrologia Dimensional...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Sansar <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Inmersion_Digital">Iniciando la inmersión Digital...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Realidad Aumentada <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Transformative_Learning">Transformative Learning...</a></li>
+                     <li><a href="/project/TheraLens/">TheraLens...</a></li>
+                  </ul>
+                  
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Roblox <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Anatomia_Osea">Anatomía Ósea en Terapia Física con IA...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Cluster <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Entornos_3D_Inclusivos/">Entornos 3D Inclusivos...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">VrChat <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Robotica_Inmersiva/">Robótica Inmersiva e Inclusiva...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Spatial <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Experiencia_Museistica/">Experiencia Museística...</a></li>
+                     <li><a href="/project/SentiEspacio/">SentiEspacio...</a></li>
+                   </ul>
+                 </li>
+             
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Robótica <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/VirtuArm/">VirtuArm...</a></li>
+                     <li><a href="/project/XrAuto/">XrAuto...</a></li>
+                     <li><a href="/project/NeuroDrive/">NeuroDrive...</a></li>
+                     <li><a href="/project/MapTwin/">MapTwin...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Automotriz <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Experiencia_Museistica/">EVAAI...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li><a href="/pages/projects.html">Ver más...</a></li>
+               </ul>
+             </li>
+            
+            </li>
+            <li><a href="/pages/aprender.html">Aprender</a></li>
+            <li><a href="/pages/miembros.html">Miembros</a></li>
+            <li><a href="/pages/eventos.html">Eventos</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/tramites.html">Trámites</a></li>
+
          </ul>
          <div class="hamburger" id="hamburger">
             <span class="bar"></span>
@@ -53,35 +141,51 @@
    <!-- Main -->
    <div id="main">
 
-
+      <div style="position: fixed; bottom: 35px; right: 35px;">
+         <a href="#top" class="boton-top" ><i class="fas fa-arrow-up"></i></a>
+      </div>
 
       <div class="inner">
 
+         <section id="banner" data-video="images/banner">
+            <div class="inner">
+               <div class="banner-separacion">
+      
+                  <div class="bannerizq">
+                     <h1>Miembros</h1>
+                     <h2>Equipo Multidiciplinar
+                     </h2>
+                     <div>
+                        <div class="botones">
+                           <button onclick="scrollToSection('MAESTROS')">DOCENTES</button>
+                           <button onclick="scrollToSection('ALUMNOS')">ALUMNOS</button><br>
+                           <button onclick="scrollToSection('EGRESADOS')">EGRESADOS</button>
+                           <button onclick="scrollToSection('MIEMBROS-ANTERIORES')">MIEMBROS ANTERIORES</button>
 
-         <div class="banner-equipo">
-
-            <div class="container">
-               <div class="cube">
-                  <div class="face front"></div>
-                  <div class="face back"></div>
-                  <div class="face top"></div>
-                  <div class="face bottom"></div>
-                  <div class="face left"></div>
-                  <div class="face right"></div>
+                        </div>
+                     </div>
+      
+                  </div>
+                  <div class="bannerder">
+                     <div class="scene">
+                        <div class="cube">
+                           <div class="face front"></div>
+                           <div class="face back"></div>
+                           <div class="face right"></div>
+                           <div class="face left"></div>
+                           <div class="face top"></div>
+                           <div class="face bottom"></div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
+         </section>
 
-            <div class="titulo-contenedor">
-               <p class="titulo">MIEMBROS DEL EQUIPO</p>
-            </div>
 
-            <div>
-               <div class="botones">
-                  <button onclick="scrollToSection('MAESTROS')">DOCENTES</button>
-                  <button onclick="scrollToSection('ALUMNOS')">ALUMNOS</button><br>
-                  <button onclick="scrollToSection('MIEMBROS-ANTERIORES')">MIEMBROS ANTERIORES</button>
-               </div>
-            </div>
+         
+
+           
 
             <script src="/assets/js/buttons.js"></script>
          </div>
@@ -99,9 +203,9 @@
                   <div class="image fit"><img src="/images/integrantes/drgaytan.png" alt="" width="600" height="338">
                   </div>
                   <div class="inner">
-                     <p>COORDINADOR</p>
+                     <p class="puesto">ASEDOR PROFESIONAL</>
                      <h3>JOSÉ ALFREDO GAYTAN DIAZ</h3>
-                     <p>DOCTOR DE INNOVACIÓN EN TECNOLOGÍA EDUCATIVA</p>
+                     <p>DOCTORADO DE INNOVACIÓN EN TECNOLOGÍA EDUCATIVA</p>
 
                   </div>
                </div>
@@ -110,9 +214,9 @@
                   <div class="image fit"><img src="/images/integrantes/drchristian.png" alt="" width="600" height="338">
                   </div>
                   <div class="inner">
-                     <p>JEFE DE INVESTIGACIÓN</p>
+                     <p class="puesto">ASESOR ACADEMICO</p>
                      <h3>CHRISTIAN JONATHAN ANGEL RUEDA</h3>
-                     <p>DOCTOR EN TECNOLOGÍA EDUCATIVA</p>
+                     <p>DOCTORADO EN TECNOLOGÍA EDUCATIVA</p>
 
                   </div>
                </div>
@@ -121,9 +225,9 @@
                   <div class="image fit"><img src="/images/integrantes/martin.png" alt="" width="600" height="338">
                   </div>
                   <div class="inner">
-                     <p>SENIOR / LEAD PROGRAMMER</p>
+                     <p class="puesto">SENIOR / LEAD PROGRAMMER</p>
                      <h3>MARTIN JOAQUIN AGUILAR MUÑOZ</h3>
-                     <p>INGENIERO EN SOFTWARE</p>
+                     <p>INGENIERÍA EN SOFTWARE</p>
 
                   </div>
                </div>
@@ -131,19 +235,79 @@
                <div class="box">
                   <div class="image fit"><img src="/images/integrantes/lurey.png" alt="" width="600" height="338"></div>
                   <div class="inner">
-                     <p>ASESORA DE INCLUSIÓN</p>
+                     <p class="puesto">ASESORA DE INCLUSIÓN</p>
                      <h3>LUREY ITAYECITL MARTÍNEZ SÁNCHEZ</h3>
                      <p>LICENCIATURA EN LINGÜÍSTICA</p>
 
                   </div>
                </div>
 
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">INGENIERO SENIOR / LEAD EN ANIMACIÓN Y EFECTOS VISUALES</p>
+                     <h3>RICARDO RIVERA CARRILLO</h3>
+                     <p>INGENIERÍA EN ANIMACIÓN Y EFECTOS VISUALES</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">PROFESOR ASESOR</p>
+                     <h3>JUAN ANTONIO CRUZ MANDUJANO</h3>
+                     <p>DOCTORADO EN PROYECTOS</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">PROFESOR ASESOR</p>
+                     <h3>FLORA E. MERCADER TREJO</h3>
+                     <p>DOCTORADO EN QUIMICA</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/aaron.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">PROFESOR ASESOR</p>
+                     <h3>AARON RODRIGUEZ LOPEZ</h3>
+                     <p>DOCTORADO EN ELECTROQUIMICA</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">PROFESOR ASESOR</p>
+                     <h3>CITLALLI MARTÍNEZ SUÁREZ</h3>
+                     <p>LICENCIATURA EN FISIOTERAPIA</p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
+                        height="338"></div>
+                  <div class="inner">
+                     <p class="puesto">PROFESOR ASESOR</p>
+                     <h3>JORGE ALBERTO IZAGUIRRE YSAGUIRRE</h3>
+                     <p>INGENIERÍA </p>
+                  </div>
+               </div>
+
       </div>
       <div class="base-transparente" id="ALUMNOS">
-         -
+         
       </div>
 
-      <p class="subtitulo-alumnos">ALUMNOS</p>
+      <p class="subtitulo">ALUMNOS</p>
      
 
       <div class="thumbnails">
@@ -173,14 +337,7 @@
             </div>
          </div>
 
-         <div class="box">
-            <div class="image fit"><img src="/images/integrantes/RicardoRiveraCarrillo.png" alt="" width="600"
-                  height="338"></div>
-            <div class="inner">
-               <h3>RICARDO RIVERA CARRILLO</h3>
-               <p>INGENIERO SENIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
-            </div>
-         </div>
+        
 
 
 
@@ -247,15 +404,6 @@
             <div class="image fit"><img src="/images/integrantes/benjamin.png" alt="" width="600" height="338"></div>
             <div class="inner">
                <h3>BENJAMIN COMBA CALCANEO</h3>
-               <p>INGENIERO JUNIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
-            </div>
-         </div>
-
-         <div class="box">
-            <div class="image fit"><img src="/images/integrantes/Nancy Alejandra Tovar Pérez.png" alt="" width="600"
-                  height="338"></div>
-            <div class="inner">
-               <h3>NANCY ALEJANDRA TOVAR PÉREZ</h3>
                <p>INGENIERO JUNIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
             </div>
          </div>
@@ -440,11 +588,56 @@
 
       </div>
 
-      <div class="base-transparente" id="MIEMBROS-ANTERIORES">
-         -
+      <div class="base-transparente" id="EGRESADOS">
+      
       </div>
 
-      <p class="subtitulo-alumnos" id="MIEMBROS-ANTERIORES">MIEMBROS ANTERIORES</p>
+      <p class="subtitulo" id="EGRESADOS">EGRESADOS</p>
+
+
+      <div class="thumbnails">
+
+         <div class="box">
+            <div class="image fit"><img src="/images/integrantes/edgar.png" alt="" width="600" height="338"></div>
+            <div class="inner">
+               <h3>EDGAR ALEJANDRO FERNÁNDEZ ONTIVEROS</h3>
+               <p>INGENIERÍA EN ANIMACIÓN Y EFECTOS VISUALES</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image fit"><img src="/images/integrantes/cabo.png" alt="" width="600" height="338"></div>
+            <div class="inner">
+               <h3>JUAN MANUEL LÓPEZ GONZÁLEZ</h3>
+               <p>INGENIERÍA EN ANIMACIÓN Y EFECTOS VISUALES</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image fit"><img src="/images/integrantes/abraham.png" alt="" width="600" height="338"></div>
+            <div class="inner">
+               <h3>ABRAHAM MENDOZA GUERRERO</h3>
+               <p>INGENIERÍA EN ANIMACIÓN Y EFECTOS VISUALES</p>
+            </div>
+         </div>
+
+         <div class="box">
+            <div class="image fit"><img src="/images/integrantes/Nancy Alejandra Tovar Pérez.png" alt="" width="600"
+                  height="338"></div>
+            <div class="inner">
+               <h3>NANCY ALEJANDRA TOVAR PÉREZ</h3>
+               <p>INGENIERÍA EN ANIMACIÓN Y EFECTOS VISUALES</p>
+            </div>
+         </div>
+
+      </div>
+
+
+      <div class="base-transparente" id="MIEMBROS-ANTERIORES">
+         
+      </div>
+
+      <p class="subtitulo" id="MIEMBROS-ANTERIORES">MIEMBROS ANTERIORES</p>
       <!-- PROYECTOS ALINEADO ALA DERECHA -->
 
       <!-- Boxes -->
@@ -458,15 +651,6 @@
                <h3>SAMANTHA VIANNEY ALMANZA BOCANEGRA</h3>
                <p>INGENIERO JUNIOR EN SOFTWARE</p>
 
-            </div>
-         </div>
-
-
-         <div class="box">
-            <div class="image fit"><img src="/images/integrantes/edgar.png" alt="" width="600" height="338"></div>
-            <div class="inner">
-               <h3>EDGAR ALEJANDRO FERNÁNDEZ ONTIVEROS</h3>
-               <p>INGENIERO JUNIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
             </div>
          </div>
 
@@ -541,24 +725,6 @@
          </div>
 
 
-
-         <div class="box">
-            <div class="image fit"><img src="/images/integrantes/cabo.png" alt="" width="600" height="338"></div>
-            <div class="inner">
-               <h3>JUAN MANUEL LÓPEZ GONZÁLEZ</h3>
-               <p>INGENIERO JUNIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
-            </div>
-         </div>
-
-         <div class="box">
-            <div class="image fit"><img src="/images/integrantes/abraham.png" alt="" width="600" height="338"></div>
-            <div class="inner">
-               <h3>ABRAHAM MENDOZA GUERRERO</h3>
-               <p>INGENIERO JUNIOR EN ANIMACIÓN Y EFECTOS VISUALES</p>
-            </div>
-         </div>
-
-
          <div class="box">
             <div class="image fit"><img src="/images/integrantes/yered.png" alt="" width="600" height="338"></div>
             <div class="inner">
@@ -575,22 +741,10 @@
             </div>
          </div>
 
-
-
-
-
-
-
-
-
-
-
+         
       </div>
-
-
-
-
-
+      
+      
 
    </div>
 

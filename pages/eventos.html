@@ -11,43 +11,131 @@
    <meta charset="utf-8">
    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="/assets/css/eventos-page.css">
 
-   <script>
-      function toggleMenu() {
-          var nav = document.querySelector('.navbar-nav');
-          nav.classList.toggle('show');
-      }
-  </script>
-  
+   <link rel="icon" href="/images/imagen_20tramvetbn.png">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+   <script src="/assets/js/menu.js"></script>
+
+
 </head>
 
 <body id="top">
 
-  
+
 
    <!-- Navigation -->
    <nav class="navbar">
       <div class="navbar-left">
-         <a class="nav-link" href="/index.html">TRAMVET</a>
-         <a  class="nav-link-below" href="/index.html">Universidad Politécnica de Santa Rosa Jáuregui</a>
+         <a class="nav-link" href="/index.html">TRAMVET </a>
+         <a class="nav-link-below" href="/index.html">Universidad Politécnica de Santa Rosa Jáuregui</a>
+         
       </div>
       <div class="navbar-right">
          <ul class="nav-links">
-            <li><a href="/index.html">INICIO</a></li>
-            <li><a href="/pages/projects.html">PROYECTOS</a></li>
-            <li><a href="/pages/miembros.html">MIEMBROS</a></li>
-            <li><a href="/pages/eventos.html">EVENTOS</a></li>
-            <li><a href="/pages/contacto.html">CONTACTO</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li>
+               <a href="/pages/projects.html">
+                 Proyectos <i class="fas fa-chevron-down"></i>
+               </a>
+               <ul class="dropdown">
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Rec Room <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Dimensionando_el_Futuro/">Laboratorios Virtuales Metrologia Dimensional...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Sansar <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Inmersion_Digital">Iniciando la inmersión Digital...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Realidad Aumentada <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Transformative_Learning">Transformative Learning...</a></li>
+                     <li><a href="/project/TheraLens/">TheraLens...</a></li>
+                  </ul>
+                  
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Roblox <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Anatomia_Osea">Anatomía Ósea en Terapia Física con IA...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Cluster <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Entornos_3D_Inclusivos/">Entornos 3D Inclusivos...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">VrChat <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Robotica_Inmersiva/">Robótica Inmersiva e Inclusiva...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Spatial <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Experiencia_Museistica/">Experiencia Museística...</a></li>
+                     <li><a href="/project/SentiEspacio/">SentiEspacio...</a></li>
+                   </ul>
+                 </li>
+             
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Robótica <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/VirtuArm/">VirtuArm...</a></li>
+                     <li><a href="/project/XrAuto/">XrAuto...</a></li>
+                     <li><a href="/project/NeuroDrive/">NeuroDrive...</a></li>
+                     <li><a href="/project/MapTwin/">MapTwin...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li class="menu-item">
+                   <a href="#" class="plataforma">Automotriz <i class="fas fa-chevron-down"></i></a>
+                   <ul class="sub-menu">
+                     <li><a href="/project/Experiencia_Museistica/">EVAAI...</a></li>
+                   </ul>
+                 </li>
+             
+                 <li><a href="/pages/projects.html">Ver más...</a></li>
+               </ul>
+             </li>
+            
+            </li>
+            <li><a href="/pages/aprender.html">Aprender</a></li>
+            <li><a href="/pages/miembros.html">Miembros</a></li>
+            <li><a href="/pages/eventos.html">Eventos</a></li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="/pages/tramites.html">Trámites</a></li>
+
          </ul>
-          <div class="hamburger" id="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-          </div>
+         <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+         </div>
       </div>
-  </nav>
-  <script src="/assets/js/scripts.js"></script>
+   </nav>
+   <script src="/assets/js/scripts.js"></script>
 
 
 <!-- Main -->

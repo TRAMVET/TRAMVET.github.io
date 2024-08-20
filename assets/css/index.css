@@ -1519,6 +1519,12 @@ li > a {
    padding: 10px 10px;
    text-decoration: none;
    color: #000; 
+   font-weight: normal;
+}
+
+
+.plataforma{
+   padding: 10px 10px;
 }
 
 li .dropdown {
@@ -1564,7 +1570,7 @@ li .dropdown li a:hover {
    justify-content: space-between;
    align-items: center;
    flex-direction: row;
-   padding: 0.5em 2em;
+   padding: 0em 2em;
    background-color: #ffffff;
    color: rgb(0, 0, 0);
    position: sticky;
@@ -1575,6 +1581,48 @@ li .dropdown li a:hover {
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
 
 }
+
+.dropdown {
+   position: relative;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+
+ .menu-item {
+   position: relative;
+ }
+
+ .sub-menu {
+   display: none;
+   position: absolute;
+   right: 100%;
+   top: 0; 
+   list-style: none;
+   background-color: #fff;
+   padding: 10px;
+   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+   min-width: 200px;
+   z-index: 1000;
+   white-space: nowrap; /* Evita el desbordamiento de texto */
+ }
+
+ .menu-item:hover .sub-menu {
+   display: block;
+ }
+
+ .plataforma {
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .dropdown > li {
+   position: relative;
+   white-space: nowrap; 
+   
+ }
 
 
 
@@ -1594,7 +1642,7 @@ li .dropdown li a:hover {
    height: 100%;
    display: flex;
    align-items: space-between;
-   letter-spacing: 2px;
+   letter-spacing: 1.5px;
    font-weight: normal;
 }
 
@@ -1618,25 +1666,25 @@ li .dropdown li a:hover {
    padding: 10px;
    display: block;
    position: relative;
-   
 
 }
 
 .navbar-left {
    padding: 0;
-   margin-left: 2%;
+   margin-left: 0.5%;
 }
 
 .navbar-left .nav-link {
    font-weight: bold;
-   letter-spacing: 3px;
+   letter-spacing: 10px;
    font-size: 2em;
    color: #274873;
 }
 
 .navbar-left .nav-link-below {
-   letter-spacing: 3px;
+   letter-spacing: 2px;
    font-size: inherit;
+   margin-bottom: 1em;
    text-transform: uppercase;
    font-size: 0.8em;
    text-align: start;
@@ -1691,7 +1739,7 @@ a {
    margin: 4px 0;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
    .nav-links {
       display: none;
       position: absolute;
@@ -1889,7 +1937,7 @@ button.style3:active,
    -ms-justify-content: center;
    justify-content: center;
    padding: 8em 4em 6em 4em;
-   min-height: 85vh;
+   min-height: 80vh;
    background-image: url("../../images/banner.jpg");
    background-position: center;
    background-size: cover;
@@ -1925,8 +1973,9 @@ button.style3:active,
 
 
 #banner .buttonizq{
-   background-color: #F58238;
+   background-color: orange;
    color: white !important ;
+   text-transform: capitalize;
 
 }
 
@@ -1937,6 +1986,8 @@ button.style3:active,
 
 #banner .buttonder{
    background-color: white;
+   text-transform: capitalize;
+
 }
 
 #banner .buttonder:hover{
@@ -1946,22 +1997,33 @@ button.style3:active,
 
 #banner button{
    width: 25%;
-   height: 7vh;
+   height: 10vh;
    margin-top: 1em;
    border: none;
 }
 
 @media screen and (max-width: 1099px) {
    #banner button {
-      width: 60%;
+      width: 45%;
+   }
+s
+   #banner h1 {
+      font-size: 4em;
+     
    }
  
  }
 
  @media screen and (max-width: 736px) {
    #banner button {
-      width: 70%;
+      width: 100%;
    }
+
+   #banner h1 {
+      font-size: 2em;
+     
+   }
+ 
  
  }
 
@@ -1995,6 +2057,10 @@ button.style3:active,
    .cube {
       display: none;
   }
+
+  .banner-separacion{
+   padding: 1em;
+ }
  
  }
 
@@ -2006,6 +2072,11 @@ button.style3:active,
    #banner h2{
       font-size: 1em;
    }
+
+   .banner-separacion{
+      padding: 1em;
+    }
+    
  
  }
 
