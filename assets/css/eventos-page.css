@@ -177,7 +177,7 @@ body {
 }
 
 body {
-   background: linear-gradient(to bottom, #f5f5f5, #d4d4d4);
+   background: linear-gradient(to bottom, #f5f5f5, #efefef);
 }
 
 
@@ -408,7 +408,7 @@ article.special {
 }
 
 header p {
-   color: rgba(255, 255, 255, 0.5);
+   color: rgb(255, 255, 255);
    position: relative;
    margin: 0 0 1.5em 0;
 }
@@ -1178,15 +1178,12 @@ button.small,
 
 
 .subtitulo {
-   color: #ffffff; 
-   font-size: 3em;
-   font-weight: bold;
-   text-align: center; 
+   color: orange !important;
+   font-size: 3em !important; 
+   font-weight: bold !important;
+   text-align: center !important; 
   margin: 0;
-   text-shadow: 2px 2px 4px rgba(135, 135, 135, 0.5), 0 0 10px rgba(180, 180, 180, 0.3), 0 0 15px rgba(181, 181, 181, 0.2); /* Sombras para crear el efecto de relieve */
-   padding: 0.5em 0; /* Espacio alrededor del texto */
-   font-family: Arial, Helvetica, sans-serif;
-   
+  letter-spacing: 1px;
 
 }
 
@@ -1198,18 +1195,6 @@ button.small,
    align-items: center;
 }
 
-.subtitulo-alumnos {
-   
-   color: #ffffff; 
-   font-size: 3em;
-   font-weight: bold;
-   text-align: center;
-   margin-top: 2em;
-   margin: 0;
-   text-shadow: 2px 2px 4px rgba(135, 135, 135, 0.5), 0 0 10px rgba(180, 180, 180, 0.3), 0 0 15px rgba(181, 181, 181, 0.2);
-   padding: 0.5em 0; 
-   font-family: Arial, Helvetica, sans-serif;
-}
 
 .base-transparente {
    width: 1em;
@@ -1227,8 +1212,7 @@ button.small,
    font-size: 3.5em;
    font-weight: bold;
    margin-top: 1em;
-   color: rgb(255, 255, 255);
-   text-shadow: 2px 2px 4px rgba(104, 104, 104, 0.5), 0 0 10px rgba(180, 180, 180, 0.3), 0 0 15px rgba(181, 181, 181, 0.2); 
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1713,7 +1697,8 @@ button.style3:active,
    -ms-justify-content: center;
    justify-content: center;
    padding: 8em 4em 6em 4em;
-   min-height: 70vh;
+   min-height: 30vh;
+   margin-bottom: 10vh;
    background-image: url("../../images/banner.jpg");
    background-position: center;
    background-size: cover;
@@ -1754,7 +1739,7 @@ button.style3:active,
 }
 
 #banner p {
-   color: rgba(255, 255, 255, 0.85);
+   color: rgb(255, 255, 255);
    font-size: 1.5em;
    font-weight: 300;
 }
@@ -1882,7 +1867,7 @@ body.is-loading #banner:before {
 /* Main */
 
 #main {
-   padding: 4em 0 2em 0;
+   padding: 0em 0 2em 0;
 }
 
 
@@ -1890,7 +1875,7 @@ body.is-loading #banner:before {
 @media screen and (max-width: 736px) {
 
    #main {
-      padding: 3em 0 1em 0;
+      padding: 0em 0 1em 0;
    }
 
 }
