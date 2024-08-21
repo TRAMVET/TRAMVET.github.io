@@ -1223,11 +1223,13 @@ button.small,
 
 .subtitulo {
    color: rgb(39, 72, 115); 
-   font-size: 3em;
+   display: flex;
+   flex-wrap: wrap;
+   font-size: 1.5em;
    font-weight: bold;
    text-align: start; 
   margin: 0;
-  letter-spacing: 5px;
+  letter-spacing: 1.5px;
    margin-bottom: 5vh;
 
 }
@@ -1319,13 +1321,14 @@ button.small,
 
 iframe {
    width: 100%;
-   max-width: 50vw; 
    display: block; 
    margin: 0 auto; 
 }
 
 .archivos {
    display: flex;
+   justify-content: center;
+   align-items: center;
    flex-wrap: wrap; 
    gap: 20px; 
 }
@@ -1342,7 +1345,9 @@ iframe {
 
 @media (max-width: 1199px) {
    .archivos iframe {
-       flex: 1 1 100%; 
+       width: 100%;
+       background-color: red
+       ;
    }
 }
 
