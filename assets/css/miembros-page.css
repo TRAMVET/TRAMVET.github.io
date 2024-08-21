@@ -515,6 +515,26 @@ header h6+p {
    pointer-events: none; /* Add this line */
 }
 
+
+@media (max-width: 1200px) {
+   .dropdown {
+      display: none;
+   }
+
+   .dropdown-trigger {
+      display: block;
+   }
+
+   .dropdown .sub-menu {
+      display: none;
+      background-color: red;
+   }
+
+   .dropdown>.menu-item>a {
+      pointer-events: none;
+   }
+}
+
 .face {
    position: absolute;
    width: 150px;
@@ -781,12 +801,18 @@ input[type="radio"]+label:before {
 }
 
 
-.boton-top{
-   background-color: orange; 
-   color: white; 
-   padding: 10px 15px; 
+.boton-top {
+   position: fixed;
+   bottom: 35px;
+   right: 35px;
+   background: #333;
+   color: white;
+   padding: 5px 10px;
    border-radius: 50%;
-}
+   text-decoration: none;
+   font-size: 24px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
 
 
 
@@ -1944,7 +1970,7 @@ button.style3:active,
    justify-content: center;
    padding: 8em 4em 6em 4em;
    min-height: 75vh;
-   background-image: url("../../images/banner2.jpg");
+   background-image: url("../../images/banner.jpg");
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;

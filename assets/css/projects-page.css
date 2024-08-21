@@ -1262,6 +1262,24 @@ button.small,
 }
 
 
+@media (max-width: 1200px) {
+   .dropdown {
+      display: none;
+   }
+
+   .dropdown-trigger {
+      display: block;
+   }
+
+   .dropdown .sub-menu {
+      display: none;
+      background-color: red;
+   }
+
+   .dropdown>.menu-item>a {
+      pointer-events: none;
+   }
+}
 .subtitulo {
    color: #2748738f;
    font-size: 3em;
@@ -1280,6 +1298,22 @@ button.small,
    gap: 0.5em;
    align-items: center;
 }
+
+.boton-top {
+   position: fixed;
+   bottom: 35px;
+   right: 35px;
+   background: #333;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 50%;
+   text-decoration: none;
+   font-size: 24px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   z-index: 1000;
+
+ }
+
 
 .subtitulo-alumnos {
    
