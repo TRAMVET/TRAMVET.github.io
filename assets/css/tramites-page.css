@@ -1345,13 +1345,43 @@ iframe {
 
 @media (max-width: 1199px) {
    .archivos iframe {
-       width: 100%;
-       background-color: red
-       ;
+       width: 100%;       ;
    }
 }
 
+.boton-top {
+   position: fixed;
+   bottom: 35px;
+   right: 35px;
+   background: #333;
+   color: white;
+   padding: 5px 10px;
+   border-radius: 50%;
+   text-decoration: none;
+   font-size: 24px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
 
+
+
+@media (max-width: 1200px) {
+   .dropdown {
+      display: none;
+   }
+
+   .dropdown-trigger {
+      display: block;
+   }
+
+   .dropdown .sub-menu {
+      display: none;
+      background-color: red;
+   }
+
+   .dropdown>.menu-item>a {
+      pointer-events: none;
+   }
+}
 .plataforma{
    padding: 10px 10px;
 }
